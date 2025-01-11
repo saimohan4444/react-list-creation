@@ -1,0 +1,101 @@
+/* ListContainer.css */
+.list-container {
+    padding: 20px;
+  }
+  
+  .list-row {
+    display: flex;
+    gap:15px ;
+    margin-bottom: 20px;
+  }
+  
+  .list-section {
+    width: fit-content; /* Make each list take up almost half of the row */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    background-color: #d4eaff;
+  }
+  
+
+  .list-container > div:first-child {
+    width: 100%; /* Make sure the header section takes full width */
+    
+    text-align: center; /* Center align vertically */
+    margin-bottom: 20px; /* Add some space below the create list section */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .list-section h2 {
+    text-align: center;
+  }
+  
+  .list-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list-section li {
+    margin: 5px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px; /* Add space between cards */
+  }
+  
+  .card {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* ListContainer.css */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Optional space between checkbox and card container */
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and heading */
+    cursor: pointer;
+  }
+  
