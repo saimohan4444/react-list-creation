@@ -48,6 +48,25 @@
   button:hover {
     background-color: #0056b3;
   }
+
+  .button-row.top-buttons {
+    display: flex;
+    justify-content: space-between; /* Space between Cancel and Update */
+    margin-bottom: 20px; /* Add spacing below buttons */
+  }
+  
+  .button-row button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .button-row{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
   
   .list-section h2 {
     text-align: center;
@@ -95,7 +114,20 @@
   }
   
   .checkbox-container input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and heading */
-    cursor: pointer;
+    width: 18px; /* Increase the width of the checkbox */
+    height: 18px; /* Increase the height of the checkbox */
+    margin-right: 10px; /* Add spacing between checkbox and label */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+  }
+
+  .card-arrows {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .arrow-container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
   }
   
