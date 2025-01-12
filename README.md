@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# List Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based list management application bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It allows users to manage items between multiple lists, fetch data from an API, and dynamically create new lists.
+
+## Live Demo
+
+Access the live application here: [List Management Application](https://saimohan4444.github.io/)
+
+---
 
 ## Available Scripts
 
@@ -24,20 +30,20 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified, and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run deploy`
+
+Deploys the production build to GitHub Pages, making it accessible online.\
+This script uses the `gh-pages` package for deployment.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: This is a one-way operation. Once you `eject`, you can't go back!**\
+Ejecting copies all the configuration files and dependencies (like Webpack, Babel, and ESLint) into your project for full control. Use this only if necessary.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
 ## Learn More
 
@@ -45,26 +51,35 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Features
 
-### Analyzing the Bundle Size
+1. **Dynamic List Management**:
+   - View items in two default lists (`List 1` and `List 2`).
+   - Create new lists dynamically by selecting items from existing lists.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Item Movement**:
+   - Move items between existing lists.
+   - Add items to a newly created list.
 
-### Making a Progressive Web App
+3. **Data Fetching**:
+   - Fetch list data from an API using the `fetchLists` service.
+   - Display loading indicators during data fetching and handle errors gracefully.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Deployment**:
+   - Deployed to GitHub Pages for easy access.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Example API Response
 
-### Deployment
+The application fetches initial list data from an API. Below is an example of the API response structure:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+{
+  "lists": [
+    { "id": 1, "name": "Item 1", "description": "Description 1", "list_number": 1 },
+    { "id": 2, "name": "Item 2", "description": "Description 2", "list_number": 2 }
+  ]
+}
